@@ -10,12 +10,30 @@ appEventData.push({
             {
                 "quantity": 1,
                 "productInfo": {
-                    "productID": "<productID>",
-                    "name": "<name>",
+                    "productID": "1234",
+                    "name": "Regular Ticket",
+                    "type": "ticket",
                     "ticket": {
-                        "ticketTier": "<ticketTier>", // what ticket tiers were purchased? (e.g. standard, VIP)
-                        "ticketAge": "<ticketAge>", // what ticket age was purchased (e.g. child, adult, senior)
+                        "ticketTier": "vip", // what ticket tiers were purchased? (e.g. standard, VIP)
                         "ticketAdmits": 1, // how many people does a purchase ticket admit? (e.g. a family ticket would admit 4 people)
+                    },
+                },
+                "price": {
+                    "sellingPrice": "<sellingPrice>"
+                },
+                "voucherDiscount": {
+                    "orderLevelDiscountCode": "<orderLevelDiscountCode>"
+                }
+            },
+            {
+                "quantity": 1,
+                "productInfo": {
+                    "productID": "abc123",
+                    "name": "3D Glasses",
+                    "type": "concession",
+                    "ticket": { // do we still have to set these in the data layer? Would rather not
+                        "ticketTier": "", // what ticket tiers were purchased? (e.g. standard, VIP)
+                        "ticketAdmits": 0, // how many people does a purchase ticket admit? (e.g. a family ticket would admit 4 people)
                     },
                 },
                 "price": {
