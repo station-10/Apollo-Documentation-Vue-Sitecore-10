@@ -1,4 +1,4 @@
-# Video Started
+# Discount Code Entry Failed
 
 ### 
 
@@ -6,10 +6,9 @@
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Video Started",
-    "video": {
-        "videoID": "<videoID>",
-        "videoName": "<videoName>"
+  "event": "Discount Code Entry Failed",
+    "voucherDiscount": {
+        "discountCode": "<discountCode>"
     }
 });
 ```
@@ -18,8 +17,7 @@ appEventData.push({
 
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|videoID|string|Video ID|YT456789, BC4567890, 876546789|||||||
-|videoName|string|Video Name|Twitch\_FPS, Age of Empires, Halo|||||||
+|discountCode|string|Discount code entered or applied|5OFFSHOES, AKRONCANDLES2019|||||||
 
 
 

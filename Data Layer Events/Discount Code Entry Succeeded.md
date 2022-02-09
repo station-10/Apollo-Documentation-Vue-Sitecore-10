@@ -1,4 +1,4 @@
-# Order Status Checked
+# Discount Code Entry Succeeded
 
 ### 
 
@@ -6,9 +6,9 @@
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Order Status Checked",
-    "order": {
-        "status": "<status>"
+  "event": "Discount Code Entry Succeeded",
+    "voucherDiscount": {
+        "discountCode": "<discountCode>"
     }
 });
 ```
@@ -17,7 +17,7 @@ appEventData.push({
 
 |Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|status|string|Captures the status of the visitor's order.|Shipped, Completed, Cancelled, Refunded, Pending, Awaiting Pickip|||||||
+|discountCode|string|Discount code entered or applied|5OFFSHOES, AKRONCANDLES2019|||||||
 
 
 

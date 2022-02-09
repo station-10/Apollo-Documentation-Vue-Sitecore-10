@@ -17,11 +17,15 @@ appEventData.push({
                     "name": "<name>",
                     "productID": "<productID>"
                 },
-                "quantity": <quantity>
+                "quantity": <quantity>,
+                "voucherDiscount": {
+                    "orderLevelDiscountCode": "<orderLevelDiscountCode>"
+                }
             }
         ],
         "payment": [
             {
+                "paymentAmount": "<paymentAmount>",
                 "paymentID": "<paymentID>",
                 "paymentMethod": "<paymentMethod>"
             }
@@ -40,6 +44,8 @@ appEventData.push({
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
 |currency|string|Currency of the transaction. ISO 4217 \(3 character alpha\), uppercase |USD, CAD, GBP, CHF|^[A-Z]{3}$|3|3||||
 |name|string|Name of the product or offering.  Should be unique and 1:1 with productID|Oceana, Corsica, Flame Tech, Air Jordan 88|||||||
+|orderLevelDiscountCode|string|Order Level Discount code applied at the item level of a transaction. |FRIENDSANDFAMILY20, EASTER10|||||||
+|paymentAmount|string|String representation of the payment amount. Positive. Up to two decimal places for cents. No currency symbol.|200, 29.99, 50, 0|^[0-9]*(\.[0-9]{1,2})?$||||||
 |paymentID|string|Unique identifier of a payment.  Typically an integration key from a back-end system.|ZPH-87698-098|||||||
 |paymentMethod|string|Describes the method of payment for a transaction. |Credit Card, PayPal, Mastercard, Visa, Amex, Discover|||||||
 |productID|string|Unique Identifier of a product or offering.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level above SKU for products with SKU variants. |155, 65588, 987764448|||||||
