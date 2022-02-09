@@ -1,0 +1,32 @@
+window.appEventData = window.appEventData || [];
+appEventData.push({
+    "event": "Order Placed",
+    "transaction": {
+        "orderDetails": {
+            "currency": "<currency>",
+            "purchaseID": "<purchaseID>",
+            "paymentMethod": ["<paymentMethod>"],
+            "transactionID": "<transactionID>",
+            "venue": {
+                "venueCode": "<venueCode>", // At which cinema code were tickets placed? (e.g. 10036)
+                "venueName": "<venueName>", // At which cinema name were tickets placed? (e.g. Vue Birmingham)
+            "voucherDiscount": {
+                "orderLevelDiscountCode": "<orderLevelDiscountCode>"
+            }
+          },
+        "productDetails": [
+          {
+              "productType":"<productType", //tickets, concessions etc
+              "quantity": 1,
+              "productID": "<productID>",
+              "name": "<name>",
+              "tier":"<tier>",    //tickets only, blank||default for concessions
+              "admits":1,         //tickets only, blank||default for concessions
+              "price": {
+                "sellingPrice": "<sellingPrice>"
+                }, 
+            },
+          ],
+    },
+  },
+});
