@@ -6,7 +6,12 @@
 
 |Attribute Name|Field|Description|
 | --- | --- | --- |
+|Analytics Cookie ID|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
+|Analytics Cookie ID|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
+|Analytics Library Version|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
 |Hit Date / Time|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
+|Previous Page Name|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
+|Previous Page Name|Tag Manager Custom Code|Data for this attribute requires custom code in the tag manager. Read more about how to implement custom code in the tag manager here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
 
 
 
