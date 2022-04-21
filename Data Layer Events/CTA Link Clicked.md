@@ -16,10 +16,10 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|linkId|string|Identifier of the link clicked|act now, cancel, ok, 3456, 8765|||||||
-|linkPage|string|Indicates the page a link was clicked from|Home Page, Order Confirmation|||||||
+|linkInfo.linkId|string|Identifier of the link clicked|act now, cancel, ok, 3456, 8765|||||||
+|linkInfo.linkPage|string|Indicates the page a link was clicked from|Home Page, Order Confirmation|||||||
 
 
 
