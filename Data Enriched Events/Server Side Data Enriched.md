@@ -4,9 +4,9 @@
 
 ## Variable Definitions
 
-|Attribute Name|Field|Description|
-| --- | --- | --- |
-|User Agent String|Processing Rule|Data for this attribute requires processing rules, which let you make changes to data based on defined conditions. Read more about Processing Rules here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
+|Attribute Name|Data Source Type|Data Source|Description|
+| --- | --- | --- | --- |
+|User Agent String|Data Enrichment|Processing Rule|Data for this attribute requires processing rules, which let you make changes to data based on defined conditions. Read more about Processing Rules here: https:\/\/docs.apolloplatform.com\/en\/articles\/5481690-data-sources.|
 
 
 
