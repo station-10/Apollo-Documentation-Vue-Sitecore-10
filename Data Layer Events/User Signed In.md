@@ -17,11 +17,11 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|custKey|string|Unique identifier of a customer.  Any id's considered PII must be hashed. ||||||||
-|loginStatus|string|Describes the login state of the user|logged in, logged out, guest|||||||
-|system|string|Describes the system that the user is logged into.  \(rarely used\). |admin, shop, member|||||||
+|user.custKey|string|Unique identifier of a customer.  Any id's considered PII must be hashed. ||||||||
+|user.loginStatus|string|Describes the login state of the user|logged in, logged out, guest|||||||
+|user.system|string|Describes the system that the user is logged into.  \(rarely used\). |admin, shop, member|||||||
 
 
 

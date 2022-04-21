@@ -1,4 +1,4 @@
-# Product Added to Cart
+# Checkout Step Encountered
 
 ### 
 
@@ -6,10 +6,14 @@
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Product Added to Cart",
+  "event": "Checkout Step Encountered",
+    "eventDetails": {
+        "checkoutStep": "<checkoutStep>"
+    },
     "filmEvent": {
         "filmEventId": "<filmEventId>",
-        "filmEventName": "<filmEventName>"
+        "filmEventName": "<filmEventName>",
+        "filmEventType": "<filmEventType>"
     },
     "product": [
         {
@@ -18,7 +22,6 @@ appEventData.push({
                 "totalPrice": "<totalPrice>"
             },
             "productInfo": {
-                "name": "<name>",
                 "productID": "<productID>",
                 "productType": "<productType>",
                 "sessionAttributes": "<sessionAttributes>",
@@ -28,14 +31,9 @@ appEventData.push({
                 "sessionPeriod": "<sessionPeriod>",
                 "sessionScreenNumber": "<sessionScreenNumber>",
                 "ticketTier": "<ticketTier>"
-            },
-            "quantity": <quantity>
+            }
         }
-    ],
-    "venue": {
-        "venueCode": "<venueCode>",
-        "venueName": "<venueName>"
-    }
+    ]
 });
 ```
 
@@ -43,8 +41,10 @@ appEventData.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+|eventDetails.checkoutStep|string|Describes a discrete step in the checkout flow. |Cart Review, Billing Info, Shipping Info, Order Review|||||||
 |filmEvent.filmEventId|string|The ID of the film or event \(can identify films across all languages\)||||||||
 |filmEvent.filmEventName|string|The name of the film or event||||||||
+|filmEvent.filmEventType|string|The type of film or event||||||||
 |product[n].price.sellingPrice|string|String representation of the price paid after coupons or discounts. Positive. Up to two decimal places for cents. No currency symbol.|200, 29.99, 50, 0|^[0-9]*(\.[0-9]{1,2})?$||||||
 |product[n].price.totalPrice|string|The total price of the product \(selling price \* quantity\)||||||||
 |product[n].productInfo.productID|string|Unique Identifier of a product or offering.  Must match the format of back-end systems if used as a key for import of product meta data. Most often, one level above SKU for products with SKU variants. |155, 65588, 987764448|||||||
@@ -56,9 +56,6 @@ appEventData.push({
 |product[n].productInfo.sessionPeriod|string|peak, off-peak||||||||
 |product[n].productInfo.sessionScreenNumber|string|The screen number of the booking||||||||
 |product[n].productInfo.ticketTier|string|Ticket tier; standard, premium etc||||||||
-|product[n].quantity|integer|Integer number of products being acted upon \(added to a cart, removed from wishlist, purchased, reserved\)|1, 2, 3, 4, 5||||1|||
-|venue.venueCode|string|The code of the currently selected venue||||||||
-|venue.venueName|string|The name of the currently selected venue||||||||
 
 
 

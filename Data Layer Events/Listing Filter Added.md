@@ -16,10 +16,10 @@ appEventData.push({
 
 ## Variable Definitions
 
-|Field|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
+|Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|filterList|string|A twice delimited string of filterType and filterValue pairs.  Use \~ between type and value.  Use \| between pairs|sort\~price ascending\|color\~green\|size\~medium|||||||
-|listingType|string|The type of listings shown|Product, Location, Event, Room, Content|||||||
+|listingRefined.filterList|string|A twice delimited string of filterType and filterValue pairs.  Use \~ between type and value.  Use \| between pairs|sort\~price ascending\|color\~green\|size\~medium|||||||
+|listingRefined.listingType|string|The type of listings shown|Product, Location, Event, Room, Content|||||||
 
 
 

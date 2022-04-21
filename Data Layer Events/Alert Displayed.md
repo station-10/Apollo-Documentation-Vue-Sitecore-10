@@ -1,4 +1,4 @@
-# Video Started
+# Alert Displayed
 
 ### 
 
@@ -6,10 +6,9 @@
 ```js
 window.appEventData = window.appEventData || [];
 appEventData.push({
-  "event": "Video Started",
-    "video": {
-        "videoID": "<videoID>",
-        "videoName": "<videoName>"
+  "event": "Alert Displayed",
+    "alert": {
+        "alertName": "<alertName>"
     }
 });
 ```
@@ -18,8 +17,7 @@ appEventData.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|video.videoID|string|Video ID|YT456789, BC4567890, 876546789|||||||
-|video.videoName|string|Video Name|Twitch\_FPS, Age of Empires, Halo|||||||
+|alert.alertName|string|The name of the CVM alert displayed to the user||||||||
 
 
 
