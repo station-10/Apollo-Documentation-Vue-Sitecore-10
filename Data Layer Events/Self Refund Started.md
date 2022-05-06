@@ -7,14 +7,10 @@
 window.appEventData = window.appEventData || [];
 appEventData.push({
   "event": "Self Refund Started",
-    "product": [
-        {
-            "productInfo": {
-                "sessionDateTime": "<sessionDateTime>",
-                "sessionID": "<sessionID>"
-            }
-        }
-    ]
+    "sessionInfo": {
+        "sessionDateTime": "<sessionDateTime>",
+        "sessionID": "<sessionID>"
+    }
 });
 ```
 
@@ -22,8 +18,8 @@ appEventData.push({
 
 |Path|Type|Description|Example|Pattern|Min Length|Max Length|Minimum|Maximum|Multiple Of|
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-|product[n].productInfo.sessionDateTime|string|The date and time of the session. In standard ISO date time format||||||||
-|product[n].productInfo.sessionID|string|The ID of the session||||||||
+|sessionInfo.sessionDateTime|string|The date and time of the session. In standard ISO date time format||||||||
+|sessionInfo.sessionID|string|The ID of the session||||||||
 
 
 
